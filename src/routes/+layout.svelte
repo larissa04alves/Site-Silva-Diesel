@@ -1,5 +1,11 @@
 <script>
 	import '../app.css';
+	import PreHeader from '$lib/components/PreHeader.svelte';
+	import Header from '$lib/components/Header.svelte';
 </script>
 
-<slot></slot>
+<div class="h-full w-full">
+	<PreHeader />
+	<Header />
+	<slot></slot>
+</div>
