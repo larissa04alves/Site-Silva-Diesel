@@ -1,39 +1,9 @@
 <script>
-	import Separator from '$lib/components/ui/separator/separator.svelte';
-	import Phone from 'lucide-svelte/icons/phone';
-	import Clock8 from 'lucide-svelte/icons/clock-8';
-	import MapPin from 'lucide-svelte/icons/map-pin';
+	import logo from '$lib/img/logo.png';
+	import heroimg from '$lib/img/heroimg.png';
 </script>
 
-<div class="flex w-full justify-between px-16 py-3">
-	<div class="flex w-1/2 items-center gap-6">
-		<div class="flex flex-col text-[#989898]">
-			<div class="flex gap-1">
-				<MapPin />
-				<h1>Localização</h1>
-			</div>
-			<p class="pl-7">BR 386 km 38</p>
-			<p class="pl-7">Frederico Westphalen - RS</p>
-		</div>
-		<Separator orientation="vertical" class="min-h-16 bg-[#CBCBCB]" />
-		<div class="flex flex-col text-[#989898]">
-			<div class="flex gap-1">
-				<Clock8 />
-				<h1>Horário</h1>
-			</div>
-			<p class="pl-7">Segunda a sexta</p>
-			<p class="pl-7">08:00 - 18:00</p>
-		</div>
-	</div>
-	<div class="text-[#989898]">
-		<div class="flex flex-col">
-			<div class="flex gap-1">
-				<Phone />
-				<h1>Contato</h1>
-			</div>
-			<p class="pl-7">(55) 98431-3863</p>
-			<p class="pl-7">(55) 3744-2611</p>
-		</div>
-	</div>
+<div class=" flex w-full">
+	<img class="relative left-6 z-50 flex w-72" src={logo} alt="Logo" />
+	<img class="absolute w-[90%]" src={heroimg} alt="Imagem principal" />
 </div>
-<Separator orientation="horizontal" class="bg-[#CBCBCB]" />
