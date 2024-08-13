@@ -5,7 +5,7 @@
 	import MapPin from 'lucide-svelte/icons/map-pin';
 </script>
 
-<div class="flex w-full justify-between px-16 py-3">
+<div class="flex w-full justify-between px-20 py-3">
 	<div class="flex w-1/2 items-center gap-6">
 		<div class="flex flex-col text-[#989898]">
 			<div class="flex gap-1">
