@@ -1,15 +1,11 @@
 <script>
-	import logo from '$lib/img/logo.png';
-	import heroimg from '$lib/img/heroimg.png';
+	import Group from '$lib/img/Group 1.png';
+	import CardBackgroundShine from '$lib/components/animation/CardBackgroundShine.svelte';
 </script>
 
-<div class="relative flex w-full">
-	<img class="absolute -top-24 left-20 flex w-72" src={logo} alt="Logo" />
-	<div class="flex w-full justify-center">
-		<img class="w-[91%]" src={heroimg} alt="Imagem principal" />
+<section class="relative flex h-full min-h-full w-full flex-col items-start justify-center">
+	<img class="absolute top-0 flex h-screen w-full" src={Group} alt="hero page" />
+	<div class="absolute left-44">
+		<CardBackgroundShine />
 	</div>
-</div>
-
-<div class="flex items-center justify-center py-12">
-	<h1 class=" koulen text-4xl">Quem Somos</h1>
-</div>
+</section>
