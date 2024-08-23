@@ -3,6 +3,7 @@
 	import CardBackgroundShine from '$lib/components/animation/CardBackgroundShine.svelte';
 	import { Clock8, MapPin, Phone, Pin } from 'lucide-svelte';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
+	import Cards from '$lib/components/Cards.svelte';
 </script>
 
 <section class="relative flex h-full min-h-full w-full flex-col items-start justify-center">
@@ -32,12 +33,12 @@
 		<div class="text-white">
 			<p>Localização:</p>
 			<h1 class="text-2xl font-medium">BR 386 - km 38</h1>
-			<h1 class="text-2xl font-medium">F. Westpahelen - RS</h1>
+			<h1 class="text-2xl font-medium">F. Westphalen - RS</h1>
 		</div>
 	</div>
 </section>
 
-<section class="flex h-80 w-full justify-center bg-zinc-900 py-20">
+<section class="flex w-full flex-col items-center justify-center gap-10 bg-zinc-900 py-20">
 	<div class="flex gap-2">
 		<Separator
 			orientation="vertical"
@@ -45,4 +46,5 @@
 		/>
 		<h1 class="staatliches text-5xl text-white">Especialidades</h1>
 	</div>
+	<Cards />
 </section>
