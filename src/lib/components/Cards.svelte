@@ -1,7 +1,6 @@
 <script>
 	import * as Card from '$lib/components/ui/card';
 	import bico from '$lib/img/bico.svg';
-	import { Button } from './ui/button';
 	import bomba from '$lib/img/bomba.svg';
 	import estrutura from '$lib/img/estrutura.svg';
 	import arla from '$lib/img/arla.svg';
@@ -19,35 +18,35 @@
 		{
 			title: 'Bomba de Alta Pressão',
 			description:
-				'Potência constante, alta durabilidade e desempenho ideal para motores de caminhões.',
+				'Manutenção especializada em sistemas de alta pressão, com foco em eficiência e segurança, utilizando tecnologia de ponta para otimizar o desempenho do motor diesel.',
 			image: bomba,
 			alt: 'Chaves de fenda'
 		},
 		{
 			title: 'Reparos de Chicotes Eletrônicos',
 			description:
-				'Restauração completa, garantindo conexão segura e desempenho confiável dos sistemas elétricos.',
+				'Conserto e substituição de chicotes eletrônicos com atenção aos detalhes, garantindo a integridade dos sistemas elétricos para um funcionamento seguro e confiável.',
 			image: estrutura,
 			alt: 'Chicote eletrônico'
 		},
 		{
 			title: 'Sistema de Arla',
 			description:
-				'Eficiente redução de emissões, operação estável e suporte à sustentabilidade em veículos pesados.',
+				'Serviço especializado em sistemas de Arla, assegurando a conformidade com normas ambientais e a máxima eficiência do sistema de controle de emissões.',
 			image: arla,
 			alt: 'Sistema de Arla'
 		},
 		{
 			title: 'Programação de Módulos',
 			description:
-				'Com equipamentos modernos, garantimos ajustes para máximo desempenho do seu veículo.',
+				'Programação de módulos eletrônicos com ferramentas avançadas, ajustando parâmetros para melhorar o desempenho, economia de combustível e a longevidade do veículo.',
 			image: modulo,
 			alt: 'Módulo eletrônico'
 		},
 		{
 			title: 'Diagnósticos Especializados',
 			description:
-				'Equipamentos avançados, garantindo análises e soluções eficientes para o seu veículo.',
+				'Com tecnologia avançada, identificamos falhas rapidamente, possibilitando intervenções precisas que garantem o desempenho ideal e prolongam a vida útil do veículo.',
 			image: diagnostic,
 			alt: 'Diagnóstico de veículo'
 		}

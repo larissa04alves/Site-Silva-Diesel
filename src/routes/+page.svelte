@@ -1,13 +1,19 @@
 <script>
-	import Group from '$lib/img/Group 1.png';
+	import bgPrincipal from '$lib/img/bg-principal.png';
 	import CardBackgroundShine from '$lib/components/animation/CardBackgroundShine.svelte';
 	import { Clock8, MapPin, Phone, Pin } from 'lucide-svelte';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
 	import Cards from '$lib/components/Cards.svelte';
+	import Marquee from '$lib/components/MarqueeMarcas.svelte';
 </script>
 
 <section class="relative flex h-full min-h-full w-full flex-col items-start justify-center">
-	<img class="absolute top-0 flex h-screen w-full" src={Group} alt="hero page" />
+	<img
+		loading="eager"
+		class="absolute top-0 flex h-screen w-full"
+		src={bgPrincipal}
+		alt="hero page"
+	/>
 	<div class="absolute left-44">
 		<CardBackgroundShine />
 	</div>
@@ -39,7 +45,7 @@
 </section>
 
 <section class="flex w-full flex-col items-center justify-center gap-10 bg-zinc-900 py-20">
-	<div class="flex gap-2">
+	<div class="flex items-center gap-2">
 		<Separator
 			orientation="vertical"
 			class="h-[3.5rem] min-h-[2rem] w-[0.4rem] rounded-l-md bg-[#184898]"
@@ -47,4 +53,15 @@
 		<h1 class="staatliches text-5xl text-white">Especialidades</h1>
 	</div>
 	<Cards />
+</section>
+
+<section class="flex w-full flex-col items-center justify-center gap-10 bg-[#28364e] py-20">
+	<div class="flex items-center gap-2">
+		<Separator
+			orientation="vertical"
+			class="h-[3.5rem] min-h-[2rem] w-[0.4rem] rounded-l-md bg-[#184898]"
+		/>
+		<h1 class="staatliches text-5xl text-white">Marcas Especialistas</h1>
+	</div>
+	<Marquee />
 </section>
