@@ -4,7 +4,7 @@
 	import { Clock8, MapPin, Phone, Pin } from 'lucide-svelte';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
 	import Cards from '$lib/components/Cards.svelte';
-	import Marquee from '$lib/components/MarqueeMarcas.svelte';
+	import Marquee from '$lib/components/animation/Marquee.svelte';
 </script>
 
 <section class="relative flex h-full min-h-full w-full flex-col items-start justify-center">
@@ -56,12 +56,5 @@
 </section>
 
 <section class="flex w-full flex-col items-center justify-center gap-10 bg-[#28364e] py-20">
-	<div class="flex items-center gap-2">
-		<Separator
-			orientation="vertical"
-			class="h-[3.5rem] min-h-[2rem] w-[0.4rem] rounded-l-md bg-[#184898]"
-		/>
-		<h1 class="staatliches text-5xl text-white">Marcas Especialistas</h1>
-	</div>
 	<Marquee />
 </section>

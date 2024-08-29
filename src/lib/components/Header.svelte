@@ -8,7 +8,7 @@
 <nav
 	class="fixed z-20 flex h-16 w-full items-center justify-between bg-gradient-to-b {scrollY >
 	1.8181817531585693
-		? 'from-zinc-900 from-40% to-transparent'
+		? 'from-zinc-900 from-45% to-transparent'
 		: ''}"
 >
 	<!-- <h1 class="fixed right-40 top-40 z-20 bg-white text-5xl text-black">{scrollY}</h1> -->
