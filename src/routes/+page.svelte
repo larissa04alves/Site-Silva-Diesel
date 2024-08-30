@@ -1,5 +1,5 @@
 <script>
-	import bgPrincipal from '$lib/img/bg-principal.png';
+	import bgPrincipal from '$lib/img/bg-principal.webp';
 	import CardBackgroundShine from '$lib/components/animation/CardBackgroundShine.svelte';
 	import {
 		BadgeCheck,
@@ -15,11 +15,13 @@
 	import Cards from '$lib/components/Cards.svelte';
 	import Marquee from '$lib/components/animation/Marquee.svelte';
 	import Carousel from '$lib/components/Carousel.svelte';
-	import mapa from '$lib/img/mapa.png';
+	import mapa from '$lib/img/mapa.webp';
 	import CardMaps from '$lib/components/CardMaps.svelte';
 </script>
 
-<section class="relative flex h-full min-h-full w-full flex-col items-start justify-center">
+<section
+	class="relative flex h-full min-h-full w-full flex-col items-start justify-center bg-zinc-900"
+>
 	<img
 		loading="eager"
 		class="absolute top-0 flex h-screen w-full"

@@ -1,12 +1,5 @@
 <script>
-	import {
-		Facebook,
-		Instagram,
-		MailCheck,
-		MapPinnedIcon,
-		MapPinX,
-		PhoneForwarded
-	} from 'lucide-svelte';
+	import { Facebook, Instagram, MailCheck, MapPinnedIcon, PhoneForwarded } from 'lucide-svelte';
 	import whatsapp from '$lib/img/whatsapp.svg';
 </script>
 
