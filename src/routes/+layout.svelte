@@ -4,7 +4,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<div class="h-screen w-full">
+<div class="h-screen w-full overflow-hidden">
 	<Header />
 	<slot></slot>
 	<Footer />
