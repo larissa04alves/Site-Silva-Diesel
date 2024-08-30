@@ -57,6 +57,7 @@
 </section>
 
 <section
+	id="sobre"
 	class="flex w-full flex-col items-center justify-center gap-10 bg-zinc-900 py-20 text-white"
 >
 	<div class="flex items-center gap-2">
@@ -98,7 +99,10 @@
 	</div>
 </section>
 
-<section class="flex w-full flex-col items-center justify-center gap-10 bg-zinc-900 py-20">
+<section
+	id="especialidades"
+	class="flex w-full flex-col items-center justify-center gap-10 bg-zinc-900 py-20"
+>
 	<div class="flex items-center gap-2">
 		<Separator
 			orientation="vertical"
@@ -109,7 +113,7 @@
 	<Cards />
 </section>
 
-<section class="flex w-full flex-col items-center justify-center gap-10 bg-[#28364e] py-20">
+<section class="flex w-full flex-col items-center justify-center gap-10 bg-[#28364e] py-14">
 	<Marquee />
 </section>
 
@@ -126,13 +130,11 @@
 	</div>
 </section>
 
-<a
-	target="_blank"
-	href="https://maps.app.goo.gl/uoNR5JFTBgbWXutN6"
-	class="flex min-h-[60%] w-full items-center justify-end overflow-x-hidden bg-cover bg-center pr-56"
-	style={`background-image: url(${mapa});`}
->
-	<div class="w-[30%]">
+<section id="endereco" class=" flex w-full items-center justify-end">
+	<a target="_blank" href="https://maps.app.goo.gl/qZQNJPo1G5pnLHAU7"
+		><img class="relative flex w-full" src={mapa} alt="localizaçao" /></a
+	>
+	<div class="absolute mr-56 w-[30%]">
 		<CardMaps />
 	</div>
-</a>
+</section>

@@ -59,7 +59,7 @@
 			})}
 		>
 			{#each marcas as marca}
-				<img src={marca} alt="Logo" class=" flex h-20" />
+				<img src={marca} alt="Logo" class=" flex h-16" />
 			{/each}
 		</div>
 	{/each}

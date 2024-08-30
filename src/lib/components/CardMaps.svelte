@@ -38,16 +38,5 @@
 			</div>
 			<p class="pl-4">eletricajsilva@yahoo.com.br</p>
 		</div>
-		<Separator />
-		<div class="flex flex-col gap-1">
-			<div class="flex items-center gap-2">
-				<Separator
-					orientation="vertical"
-					class="h-[2rem] min-h-[2rem] w-[0.4rem] rounded-l-md bg-[#184898]"
-				/>
-				<h1 class="staatliches text-3xl">Horário</h1>
-			</div>
-			<p class="pl-4">Seg a sex - 8:00 - 18:00</p>
-		</div>
 	</Card.Content>
 </Card.Root>
