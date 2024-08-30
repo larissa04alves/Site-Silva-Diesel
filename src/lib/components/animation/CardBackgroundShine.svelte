@@ -15,11 +15,12 @@
 		<div class="flex flex-col gap-2 pl-7 text-[1.4rem]">
 			<p>Soluções completas para veículos diesel com</p>
 			<p>diagnósticos precisos e equipamentos modernos.</p>
-			<button
-				class="staatliches mt-6 h-10 w-2/5 transform rounded-md bg-[#184898] px-4 py-2 text-xl shadow-lg shadow-neutral-950 hover:bg-[#28364e] hover:text-white hover:brightness-110 active:animate-bounce"
+			<a
+				href="#especialidades"
+				class="staatliches mt-6 h-10 w-2/5 transform rounded-md bg-[#184898] px-4 py-2 text-center text-xl shadow-lg shadow-neutral-950 hover:bg-[#28364e] hover:text-white hover:brightness-110"
 			>
 				SAIBA MAIS
-			</button>
+			</a>
 		</div>
 	</div>
 </div>
