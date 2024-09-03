@@ -26,6 +26,7 @@
 					<Card.Root>
 						<Card.Content class="flex aspect-square items-center justify-center p-0 ">
 							<img
+								loading="lazy"
 								src={image}
 								alt={`Imagem ${i + 1}`}
 								class="h-full w-full rounded-lg object-cover"

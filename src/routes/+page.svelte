@@ -167,6 +167,7 @@
 			class="relative flex w-full rounded-3xl px-4 md:rounded-none md:px-0"
 			src={currentMapa}
 			alt="localização"
+			loading="lazy"
 		/>
 	</a>
 	<div class="w-full px-4 py-4 md:absolute md:mr-56 md:w-[30%]">

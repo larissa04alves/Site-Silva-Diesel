@@ -19,7 +19,7 @@
 				><Facebook size="35" strokeWidth="1.8" color="white" /></a
 			>
 			<a target="_blank" href="https://wa.me/5555984313863?text=Ol%C3%A1!%20Tudo%20bem%3F%20"
-				><img class="" src={whatsapp} alt="whatsapp" /></a
+				><img loading="lazy" class="" src={whatsapp} alt="whatsapp" /></a
 			>
 		</div>
 	</div>

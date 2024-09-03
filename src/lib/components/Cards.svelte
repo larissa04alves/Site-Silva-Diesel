@@ -57,7 +57,7 @@
 	{#each cards as { title, description, image, alt }, i}
 		<Card.Root class="flex max-h-[250px] min-h-[200px] min-w-[350px] max-w-[380px] flex-col">
 			<Card.Header class="flex flex-col items-center justify-center">
-				<img class="w-3/12" src={image} {alt} />
+				<img loading="lazy" class="w-3/12" src={image} {alt} />
 				<Card.Title
 					class="staatliches bg-gradient-to-b from-[#184898] via-[#28364E] to-[#28364E] bg-clip-text text-2xl tracking-wide text-transparent"
 					>{title}</Card.Title
