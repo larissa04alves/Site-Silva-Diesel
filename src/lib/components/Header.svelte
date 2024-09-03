@@ -6,18 +6,18 @@
 
 	let scrollY = 0;
 	let activeLink = 'Home';
-	let isMobile: boolean = false;
-	let isInitialized = false;
+	let isMobile: boolean;
 
 	function checkIfMobile() {
-		isMobile = window.innerWidth <= 768;
-		isInitialized = true; // Marcar como inicializado após a verificação
+		isMobile = window.innerWidth <= 768; // Define o breakpoint para mobile
 	}
 
+	// Verifica se é mobile no momento da montagem do componente
 	onMount(() => {
 		checkIfMobile();
 		window.addEventListener('resize', checkIfMobile);
 
+		// Remove o event listener quando o componente for destruído
 		return () => {
 			window.removeEventListener('resize', checkIfMobile);
 		};
@@ -26,12 +26,9 @@
 
 <svelte:window bind:scrollY />
 
-{#if !isInitialized}
-	<!-- Evita renderizar qualquer header até que a verificação de dispositivo seja feita -->
-	<div class="hidden"></div>
-{:else if isMobile}
+{#if isMobile}
 	<Headermob />
-{:else}
+{:else if !isMobile}
 	<nav
 		class="fixed z-20 flex h-16 w-full items-center justify-between bg-gradient-to-b {scrollY >
 		1.8181817531585693

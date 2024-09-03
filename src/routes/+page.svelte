@@ -26,17 +26,14 @@
 	let currentMapa: string;
 
 	function checkIfMobile() {
-		isMobile = window.innerWidth <= 768; // Define o breakpoint para mobile
+		isMobile = window.innerWidth <= 768;
 		currentBg = isMobile ? bgMobile : bgPrincipal;
 		currentMapa = isMobile ? mapaMobile : mapa;
 	}
 
-	// Verifica se é mobile no momento da montagem do componente
 	onMount(() => {
 		checkIfMobile();
 		window.addEventListener('resize', checkIfMobile);
-
-		// Remove o event listener quando o componente for destruído
 		return () => {
 			window.removeEventListener('resize', checkIfMobile);
 		};
@@ -94,7 +91,7 @@
 		<h1 class="staatliches text-5xl text-white">Diferenciais</h1>
 	</div>
 	<div class="flex flex-col items-center justify-center md:w-[75%] md:flex-row">
-		<div class=" flex h-80 w-full px-3 md:h-56 md:px-0">
+		<div class="flex h-80 w-full px-3 md:h-56 md:px-0">
 			<div class="flex w-1/2 flex-col items-center justify-center gap-3 text-center">
 				<BadgeCheck size="70" class="w-14 md:w-20" />
 				<h1 class="text-lg font-semibold md:text-xl">Experiência Comprovada</h1>
@@ -103,7 +100,7 @@
 					diesel.
 				</p>
 			</div>
-			<Separator orientation="vertical" class=" mx-3 min-h-[89%]" />
+			<Separator orientation="vertical" class="mx-3 min-h-[89%]" />
 			<div class="flex w-1/2 flex-col items-center justify-center gap-3 text-center">
 				<SquareActivity size="70" class="w-14 md:w-20" />
 				<h1 class="text-lg font-semibold md:text-xl">Tecnologia Avançada</h1>
@@ -112,13 +109,13 @@
 			<Separator orientation="vertical" class="mx-3 hidden min-h-[89%] md:flex" />
 		</div>
 		<Separator orientation="horizontal" class="my-4 flex w-[90%] md:hidden" />
-		<div class=" flex h-80 w-full px-3 md:h-56 md:px-0">
+		<div class="flex h-80 w-full px-3 md:h-56 md:px-0">
 			<div class="flex w-1/2 flex-col items-center justify-center gap-3 text-center">
 				<UserRoundCheck size="70" class="w-14 md:w-20" />
 				<h1 class="text-lg font-semibold md:text-xl">Profissionais Qualificados</h1>
 				<p>Equipe constantemente atualizada em mecatrônica para serviços seguros e eficazes.</p>
 			</div>
-			<Separator orientation="vertical" class=" mx-3 min-h-[89%]" />
+			<Separator orientation="vertical" class="mx-3 min-h-[89%]" />
 			<div class="flex w-1/2 flex-col items-center justify-center gap-3 text-center">
 				<Gauge size="70" class="w-14 md:w-20" />
 				<h1 class="text-lg font-semibold md:text-xl">Cuidado com o Desempenho</h1>
@@ -167,7 +164,6 @@
 			class="relative flex w-full rounded-3xl px-4 md:rounded-none md:px-0"
 			src={currentMapa}
 			alt="localização"
-			loading="lazy"
 		/>
 	</a>
 	<div class="w-full px-4 py-4 md:absolute md:mr-56 md:w-[30%]">
