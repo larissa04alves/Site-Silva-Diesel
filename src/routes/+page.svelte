@@ -1,6 +1,6 @@
 <script lang="ts">
 	import bgPrincipal from '$lib/img/bg-principal.webp';
-	import bgMobile from '$lib/img/fulltruck.png';
+	import bgMobile from '$lib/img/fulltruck.webp';
 	import { onMount } from 'svelte';
 
 	import CardBackgroundShine from '$lib/components/animation/CardBackgroundShine.svelte';
@@ -19,7 +19,7 @@
 	import Carousel from '$lib/components/Carousel.svelte';
 	import mapa from '$lib/img/mapa.webp';
 	import CardMaps from '$lib/components/CardMaps.svelte';
-	import mapaMobile from '$lib/img/mapaMobile.png';
+	import mapaMobile from '$lib/img/mapaMobile.webp';
 
 	let isMobile: boolean;
 	let currentBg: string;
