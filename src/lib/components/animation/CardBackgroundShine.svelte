@@ -16,7 +16,7 @@
 			<p>diagnósticos precisos e equipamentos modernos.</p>
 			<a
 				href="#especialidades"
-				class="staatliches mt-6 h-10 w-2/5 transform rounded-md bg-[#184898] px-4 py-2 text-center text-lg shadow-lg shadow-neutral-950 hover:bg-[#28364e] hover:text-white hover:brightness-110 md:text-xl"
+				class="staatliches mt-6 h-10 w-full transform rounded-md bg-[#184898] px-4 py-2 text-center text-lg shadow-lg shadow-neutral-950 hover:bg-[#28364e] hover:text-white hover:brightness-110 md:w-1/2 md:text-xl"
 			>
 				SAIBA MAIS
 			</a>
